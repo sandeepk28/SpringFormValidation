@@ -27,7 +27,7 @@ public class CustomerController {
 		customers = new HashMap<String, Customer>();
 	}
 
-	@RequestMapping(value = "/cust/save", method = RequestMethod.GET)
+	@RequestMapping(value ="/cust/save" , method = RequestMethod.GET)
 	public String saveCustomerPage(Model model) {
 		logger.info("Returning custSave.jsp page");
 		model.addAttribute("customer", new Customer());
