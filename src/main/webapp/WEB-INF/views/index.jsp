@@ -27,5 +27,19 @@
 
 	<br>
 	Upcoming 
+	
+	<br><br><br>
+	This is what our REST API does:<br>
+
+GET request to /api/user/ returns a list of users<br> 
+		 <springForm:form method="GET" 		action="user/">
+		<input type="submit" value="Get list of duumy users" />
+		</springForm:form>
+GET request to /api/user/1 returns the user with ID 1<br>
+POST request to /api/user/ with a user object as JSON creates a new user<br>
+PUT request to /api/user/3 with a user object as JSON updates the user with ID 3<br>
+DELETE request to /api/user/4 deletes the user with ID 4<br>
+DELETE request to /api/user/ deletes all the users<br>
+Reference: http://websystique.com/springmvc/spring-mvc-4-restful-web-services-crud-example-resttemplate/
 </body>
 </html>
